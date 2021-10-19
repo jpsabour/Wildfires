@@ -91,3 +91,13 @@ const Table = {
 		Table.show(value);
 	},
 };
+
+// Tests
+/*
+Table.setValue('table__body', 'content...')
+console.assert(document.getElementById('table__body').innerHTML === 'invalid content...', 'Table.setValue is broken!');
+
+const tableHeader = Table.setTableHeader({ 'County': '...', 'Name': '...', 'AcresBurned': '...', 'PercentContained': '...', 'IsActive': '...' });
+const expectedTableHeader = ['County', 'Name', 'AcresBurned', 'PercentContained', 'IsActive'];
+console.assert(tableHeader.toString() == expectedTableHeader.toString(), 'setTableHeader failed');
+*/

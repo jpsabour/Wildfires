@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML/JS Table</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+	<div class="row">
+		<div class="col-md-1">
+			<label>County</label>
+		</div>
+		<div class="col-md-4">
+			<select class="form-control" id="countyfilter" onchange="Table.search(this.value)"></select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="table__body" class="margin-top-2" style="height: 600px; overflow-y: scroll;">
+				
+			</div>
+		</div>
+	</div>
+	<script src="table.js"></script>
+</body>
+</html>
